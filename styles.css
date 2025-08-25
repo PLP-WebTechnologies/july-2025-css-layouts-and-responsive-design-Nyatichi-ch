@@ -1,0 +1,109 @@
+/* styles.css */
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* Styles the body*/
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+/* Header Styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rebeccapurple;
+    color: white;
+}
+.nav a {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px; 
+}
+
+.design {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background-color: thistle;
+    border-bottom: 2px solid #333;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.flex-container {
+  display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;  
+}
+.container div{
+    background-color: lightgrey;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.flex-item {
+    background-color: grey;
+    padding: 20px;
+    border: 1px solid blue;
+    flex: 1;
+    order: 1px;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1.0em;
+
+}
+/* Grid Layout Styles */
+ .grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ccc;
+    border: 2px solid #333;  
+
+}
+.grid item {
+    background-color: #f4f;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 4px;
+   
+  
+}
+/* Responsive Design with Media Queries */  
+@media (min-width: 600px) {
+    .site-header {
+        padding: 1.5rem 3rem;
+    }
+    .flexbox {
+        flex-direction: row;
+        text-align: left;
+        height: 60vh;
+    }
+}
+@media (min-width: 900px) {
+    .grid-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: tomato;
+    color: blueviolet;
+    position: relative;
+}
+
